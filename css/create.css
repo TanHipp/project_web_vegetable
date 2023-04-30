@@ -1,0 +1,113 @@
+/* Add some spacing and center the form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Style the labels and inputs */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+input:hover {
+  background-color: #f0f0f0;
+}
+input[type="text"],
+input[type="file"] {
+  padding: 10px 0 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+input[type="file"] {
+ padding: 0;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 180px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Style the heading */
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Style the form when the user is interacting with it */
+form:active,
+form:focus-within {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the file input */
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #3e8e41;
+}
+
+input[type="file"]::-webkit-file-upload-button:active {
+  background-color: #367130;
+}
+
+/* Style the file input label */
+input[type="file"]::-webkit-file-upload-button+label {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+}
+
+/* Hide the file input text */
+input[type="file"]::-webkit-file-upload-button+label>input[type="text"] {
+  display: none;
+}
+
+/* Style the error messages */
+.error {
+  color: #f00;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Add some responsiveness */
+@media screen and (max-width: 600px) {
+  form {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  input[type="submit"] {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

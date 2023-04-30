@@ -1,0 +1,191 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* Container */
+.login-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  /* Đổi giá trị margin-top thành 20px */
+  padding: 50px;
+  background-image: url("https://bizweb.dktcdn.net/100/330/208/files/background-login.jpg?v=1652432239264");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Form */
+
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+/* Label */
+label {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #27ae60;
+  transition: color 0.2s ease;
+}
+
+label:hover {
+  color: #2ecc71;
+}
+
+/* Input */
+input[type="text"],
+input[type="password"] {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #f8f8f8;
+  color: #2c3e50;
+  /* transition: background-color 0.2s ease; */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border: 2px solid #27ae60;
+  box-shadow: 0 0 5px #27ae60;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ecf0f1;
+  border: 2px solid #27ae60;
+  box-shadow: 0 0 5px #27ae60;
+}
+
+/* Submit button */
+input[type="submit"] {
+  border: none;
+  border-radius: 5px;
+  padding: 12px 145px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #27ae60;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.4s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #2ecc71;
+  transform: translateY(-3px);
+}
+
+/* Register link */
+a {
+  color: #27ae60;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #2ecc71;
+}
+
+/* Text color */
+.login-container,
+a {
+  color: #180202cb;
+  padding-bottom: 15px;
+}
+
+/* Form header */
+h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 30px;
+}
+
+/* Form message */
+p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Form message link */
+p a {
+  color: #27ae60;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+p a:hover {
+  color: #2ecc71;
+}
+
+/* Form message text color */
+.form-message {
+  color: #180202cb;
+}
+
+/* Form error message */
+.error-message {
+  font-size: 14px;
+  color: red;
+  margin-top: 10px;
+}
+
+/* Form success message */
+/* Center align form elements */
+.form-group input,
+.form-group label {
+  width: 100%;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Success message */
+.success-message {
+  color: green;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-group label {
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
